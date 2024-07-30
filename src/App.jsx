@@ -1,11 +1,12 @@
-import './App.css';
+import './index.css';
 import { GoogleGeminiEffectDemo } from './components/GoogleGeminiEffectDemo.tsx';
 
 
 function App() {
   return (
-    <div className="App">
-      <GoogleGeminiEffectDemo className='-mt-96 -mb-96'/>
+    <div className='h-lvh'>
+    
+      <GoogleGeminiEffectDemo/>
     
     </div>
   );

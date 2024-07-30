@@ -20,14 +20,14 @@ export const GoogleGeminiEffect = ({
 }) => {
   const [svgDimensions, setSvgDimensions] = useState({
     width: window.innerWidth,
-    height: window.innerHeight+300
+    height: 890
   });
 
   useEffect(() => {
     const handleResize = () => {
       setSvgDimensions({
         width: window.innerWidth,
-        height: window.innerHeight+500,
+        height: 890,
       });
     };
 
@@ -49,14 +49,14 @@ export const GoogleGeminiEffect = ({
           `Scroll this component and see the bottom SVG come to life wow this
         works!`}
       </p>
-      <div className="w-full h-[890px] -top-60 md:-top-40  flex items-center justify-center bg-red-transparent absolute ">
+      <div className="w-full h-[1040px] -top-60 md:-top-40  flex items-center justify-center bg-red-transparent absolute ">
         <button className="font-bold bg-white rounded-full md:px-4 md:py-2 px-2 py-1 md:mt-24 mt-8 z-30 md:text-base text-black text-xs  w-fit mx-auto ">
-          ui.aceternity.com
+          Download Resume
         </button>
       </div>
       <svg
         width={svgDimensions.width}
-        height={svgDimensions.height}
+        height={svgDimensions.height+100}
         viewBox={"0 0 1440 890"}
         xmlns="http://www.w3.org/2000/svg"
         className=" absolute -top-60  md:-top-40 w-full"
